@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content {
+    background-color: #f0f3f1;
+}
+
+#register-form {
+    background-color: #fff;
+    border: 1px solid #b5beb9;
+}
+
+#company-logo img{
+    border-radius: 50%;
+}
+
+#register-info {
+    display:flex;
+    flex-flow: column;
+    text-align: left;
+    color:	#06a14c;
+    font-weight: bold;
+}
+
+.register-inputs{
+    margin-bottom: 5%;
+    font-size: 100%;
+    border: 1px solid #b5beb9;
+    padding: 3px 2px;
+    color: #075228;
+}
+
+.register-inputs:focus{
+    outline-color: #06a14c;
+}
+
+.button{
+    background-color: #06a14c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #06a14c;
+}
+
+#new-user {
+    text-align:center;
+    color: #06a14c;
+    font-weight: bold;
+}
+
+
+#footer {
+    background-color: #06a14c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#loading-icon{
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px){
+    #content {
+        padding-top: 40px;
+    }
+
+    #register-form {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    
+    #company-logo {
+        width: 200px;
+        height: 130px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    #company-logo img {
+        width: 55%;
+    }
+
+    #register-info{
+        padding-top: 20px;
+    }
+
+    .register-inputs{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    label{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #register-button {
+        width: 150px;
+        height: 100%;
+        margin: 0 auto;
+        margin-bottom: 3px;
+    }
+
+    #message {
+        width: 80%;
+        height: 30px;
+        color: rgb(204, 6, 6);
+        font-weight: normal;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    #new-user {
+        text-align:center;
+    }
+
+    #login-button{
+        width: 100px;
+        height: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    #loading-icon {
+        display: none;
+        width: 80%;
+        height: 30px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (min-width: 360px){
+    #register-form {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    #register-form {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    #content {
+        padding-top: 40px;
+    }
+
+    #register-form {
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    
+    #company-logo {
+        width: 200px;
+        height: 130px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    #company-logo img {
+        width: 55%;
+    }
+
+    #register-info{
+        padding-top: 20px;
+    }
+
+    .register-inputs{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    label{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #register-button {
+        width: 170px;
+        height: 100%;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+
+    #message {
+        width: 80%;
+        height: 25px;
+        color: rgb(204, 6, 6);
+        font-weight: normal;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    #new-user {
+        text-align:center;
+    }
+
+    #login-button{
+        width: 120px;
+        height: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+
+    .button:hover{
+        background-color: #fff;
+        color: #06a14c;
+        transition: 0.3s;
+    }
+
+    #question {
+        font-size: 20px;
+    }
+
+    #loading-icon {
+        display: none;
+        width: 80%;
+        height: 25px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    #footer{
+        font-size: 17px;
+    }
+}

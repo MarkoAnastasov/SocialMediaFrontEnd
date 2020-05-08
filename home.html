@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareIT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo-icon.png">
+</head>
+
+<body>
+    <script src="./scripts/access.js"></script>
+    <div id="resolving-user" style="display:none;">
+        Please wait...
+        <br>
+        <img src="./images/logo-icon.png" alt="logo" width="100px" height="100px">
+    </div> 
+    <div id="main-page-content" style="display:none">
+        <div id="header">
+            <div id="header-width">
+                <div id="logo" class="home-buttons">
+                    <p id="brand">ShareIT</p>
+                </div>
+                <div id="logo-mobile" class="home-buttons">
+                    <img src="./images/logo-icon.png" alt="logo" width="40px" height="40px">
+                </div>
+                <div id="search-bar" class="drop-down">
+                    <input type="text" id="search" class="page-inputs" placeholder="Search" maxlength="35" required>
+                    <div id="search-result">
+                    
+                    </div>
+                </div>
+                <div id="profile-actions">
+                    <div id="home-button" class="buttons home-buttons">
+                        <img src="./images/home.png" alt="home" width="20px" height="24px">
+                    </div>
+                    <div id="request-button">
+                        <div id="request-image" class="buttons">
+                            <img src="./images/friend-request.png" id="request-seen" alt="message" width="25px" height="24px">
+                        </div>
+                        <div id="friend-requests">
+                    
+                        </div>
+                    </div>
+                    <div id="messages-button" class="buttons">
+                        <img src="./images/message.png" alt="message" width="20px" height="28px">
+                    </div>
+                    <div id="notifications-button">
+                        <div id="notification-image" class="buttons">
+                            <img src="./images/notification.png" alt="message" width="25px" height="24px">
+                        </div>
+                        <div id="user-notifications">
+                    
+                        </div>
+                    </div>
+                </div>
+                <a href="./profile/profile.html" id="profile-anchor"><div class="profile-button">
+                    <img id="profile-picture" src="./images/unknown.png" alt="unknown" width="40px" height="40px">
+                </div></a>
+            </div>
+        </div>
+        <div id="content">
+            <div id="access-share">
+                <h3>Want to share your photo?</h3>
+                <div id="show-form-button" class="button">
+                    <p>Upload</p>
+                </div>
+                <div id="post-photo" class="items-width" style="display:none">
+                    <div id="share-now">
+                        <h3>ShareIT now</h3>
+                    </div>
+                    <div id="image-source">
+                        <label for="file">Choose your photo:</label>
+                        <input type="file" name="filename" id="image-file" accept="image/*">
+                    </div>
+                    <div id="image-description">
+                        <p class="align-label"><label for="description">Add description (Optional):</label>
+                            <textarea name="description" id="description" cols="50" rows="2" maxlength="100" placeholder="Add description"></textarea>
+                        </p>
+                    </div>
+                    <div id="post-button" class="button">
+                        <p>Post</p>
+                    </div>
+                    <div id="message-response">
+                        <p id="message"></p>
+                        <div id="loading-icon">
+                            <img src="./images/preloader.gif" alt="loader" width="23px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="show-posts">
+                <div id="posts-loader">
+                    <img src="./images/preloader.gif" alt="loader">
+                </div>
+            </div>
+            <div id="post-modal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div id="post-activity">
+                        
+                  </div>
+                  <div id="modal-users-section">
+
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/postActions.js"></script>
+    <script src="./scripts/liveActions.js"></script>
+</body>
+
+</html>

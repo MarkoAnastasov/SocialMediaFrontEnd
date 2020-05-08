@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareIT - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo-icon.png">
+</head>
+<body style="display:none;">
+    <script src="./scripts/access.js"></script>
+    <div id="content">
+        <div id="login-form">
+            <div id="company-logo">
+                <img src="./images/logo.png" alt="shareIt" width="100%">
+            </div>
+            <div id="login-info">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" class="login-inputs" placeholder="E-mail" maxlength="35" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" class="login-inputs" placeholder="Password" maxlength="30" required>
+                <div id="login-button" class="button">
+                    Log In
+                </div>
+                <div id="message-response">
+                    <p id="message"></p>
+                    <div id="loading-icon">
+                        <img src="./images/preloader.gif" alt="loader" width="23px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="new-user">
+            <p id="question">New to ShareIT?</p>
+            <div id="register-button" class="button">
+                Register Now
+            </div>
+        </div>
+        <div id="promo">
+            <img src="./images/connection.png" alt="connection" width="100%">
+        </div>
+        <div id="footer">
+            <p>This website was made for educational purposes only, as alternative to some social media sites.</p>
+            <p>Made by Marko Anastasov ©2020</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
